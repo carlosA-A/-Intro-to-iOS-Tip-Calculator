@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436184B61C244749000E2A4A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436184B51C244749000E2A4A /* SettingsViewController.swift */; };
 		439CA13A1C234B4400FF3F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CA1391C234B4400FF3F6D /* AppDelegate.swift */; };
 		439CA13C1C234B4400FF3F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CA13B1C234B4400FF3F6D /* ViewController.swift */; };
 		439CA13F1C234B4400FF3F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439CA13D1C234B4400FF3F6D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		436184B51C244749000E2A4A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		439CA1361C234B4400FF3F6D /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439CA1391C234B4400FF3F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439CA13B1C234B4400FF3F6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		439CA12D1C234B4400FF3F6D = {
 			isa = PBXGroup;
 			children = (
+				436184B51C244749000E2A4A /* SettingsViewController.swift */,
 				439CA1381C234B4400FF3F6D /* tips */,
 				439CA1371C234B4400FF3F6D /* Products */,
 			);
@@ -138,6 +141,7 @@
 			files = (
 				439CA13C1C234B4400FF3F6D /* ViewController.swift in Sources */,
 				439CA13A1C234B4400FF3F6D /* AppDelegate.swift in Sources */,
+				436184B61C244749000E2A4A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				439CA14A1C234B4400FF3F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
