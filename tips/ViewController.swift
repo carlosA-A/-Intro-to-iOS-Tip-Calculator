@@ -26,14 +26,28 @@ class ViewController: UIViewController {
         //Sets the title in the navigation bar
         
         self.title = "Tip Calculator"
+       
         
-        tipLabel.text="$0.00"
-        totalLabel.text="$0.00"
+        UIView.animateWithDuration(0, animations: {
+            // This causes first view to fade in and second view to fade out
+            
+            self.totalLabel.alpha = 0
+            self.tipLabel.alpha = 0
+            
+            self.tipControl.alpha = 0
+            
+            
+            
+        })
         
-    }
+           }
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        //Keyboard appears on bill field by default
+        
+
+        billField.becomeFirstResponder()
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
@@ -51,8 +65,8 @@ class ViewController: UIViewController {
         }
         else{ tipControl.selectedSegmentIndex=2;
         }
-
-
+        
+        
         
         tipLabel.text="$\(tip)"
         totalLabel.text="$\(total)"
@@ -69,6 +83,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
+       
+        if(billField.text == ""){
+            UIView.animateWithDuration(0.4, animations: {
+                // This causes first view to fade in and second view to fade out
+                
+                self.totalLabel.alpha = 0
+                self.tipLabel.alpha = 0
+                
+                self.tipControl.alpha = 0
+                
+                
+                
+            })}
+        else{
+        UIView.animateWithDuration(0.4, animations: {
+            // This causes first view to fade in and second view to fade out
+            
+            self.totalLabel.alpha = 1
+            self.tipLabel.alpha = 1
+            
+            self.tipControl.alpha = 1
+
+            
+           
+        })}
+        
+        
         var tipPercentages = [0.18,0.2,0.22]
         
         
